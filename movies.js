@@ -1,4 +1,5 @@
 //Global Vars
+console.log("update 1")
 var userNomi = []
 var tempResults = []
 
