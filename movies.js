@@ -85,7 +85,7 @@ function getResult(movieName){
     var request = new XMLHttpRequest()
     var arr = []
     
-    var searchReq = 'http://www.omdbapi.com/?apikey=56f45916&s=' + movieName
+    var searchReq = 'https://www.omdbapi.com/?apikey=56f45916&s=' + movieName
     request.onload = function () {
       var results = JSON.parse(this.response)
       if (request.status >= 200 && request.status < 400 && results.Response) {
