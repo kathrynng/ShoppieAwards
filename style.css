@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap');
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Lexend Deca', monospace;
+}
+
+ul {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+body .main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 20px;
+    padding:0.25em;
+}
+
+.main h1 {
+    margin: 0.5em 0;
+}
+
+.heading-img {
+    width: 35px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    border-radius: 15px;
+    border: 1px solid #682c48;
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.search-bar #clear{
+    border:1px solid #ced4da;
+    border-left: none;
+    background-color: white;
+}
+
+.search-bar #clear:hover{
+    background-color: gray;
+}
+
+#search-result-area{
+    border-radius: 15px;
+    padding: 1em;
+    border: 1px solid #a5748b;
+    margin-right: 1em;
+    /* box-shadow: 1px 5px 10px gray; */
+}
+
+#nomi-area{
+    border-radius: 15px;
+    padding: 1em;
+    border: 1px solid #6e3434;
+    margin-left: 1em;
+    /* box-shadow: 1px 5px 10px gray; */
+}
+
+#fullAlert {
+    box-shadow: 0px 0px 15px grey;
+    margin-top: 35px;
+}
+
+ul .btn{
+    margin-left: 10px;
+}
+
+ul#results-list li{
+    list-style-type: none;
+}
+
+ul#results-list li::before{
+    content: "📽️";
+    margin-left: -40px;
+    margin-right: 10px;
+}
+
+ul#nomi-list li{
+    list-style-type: none;
+}
+
+ul#nomi-list li::before{
+    content: "⭐";
+    margin-left: -40px;
+    margin-right: 10px;
+}
+
+.input-validation {
+    color: red;
+    display: none;
+}
