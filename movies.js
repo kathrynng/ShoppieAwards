@@ -24,6 +24,7 @@ $(document).ready(function() {
   $('form').submit(function() {
     searchBoxValidation.css("display","none")
     const movieName = $('#movieName').val()
+    const regex = /^[0-9a-zA-Z\s]+$/;  
     
     // Validation (Regex) + Conversion 
     if(!movieName || !movieName.match(regex)){
