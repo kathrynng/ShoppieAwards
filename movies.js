@@ -24,7 +24,6 @@ $(document).ready(function() {
   $('form').submit(function() {
     searchBoxValidation.css("display","none")
     const movieName = $('#movieName').val()
-    const regex = /^[0-9a-zA-Z]+$/;  
     
     // Validation (Regex) + Conversion 
     if(!movieName || !movieName.match(regex)){
@@ -34,7 +33,7 @@ $(document).ready(function() {
       return false
     }
 
-    const newMovieName = movieName.trim() 
+    const newMovieName = movieName.trim()
     const urlMovieName = encodeURIComponent(newMovieName)
     // Request + Refresh List if movies exist
     getResult(urlMovieName).then((result) => {
